@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px;
+    padding: 20px;
+}
+
+h1, p {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+form {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    width: 35%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 0;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    outline: 0;
+}
+/* .large-input {
+    width: 0%;
+}
+*/
+
+.checkbox-group {
+    margin-top: 20px;
+}
+
+button {
+    width: 100px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: black; /* Muda a cor do texto placeholder */
+     /* Aplica itálico ao placeholder */
+}
+input.ddd-input{
+    width: 40px;
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: center;
+    margin-right: 5px;
+}
+/* Adiciona o parêntese esquerdo antes do campo DDD */
+input.ddd-input::before {
+    content: "(";
+    margin-right: 5px;
+    font-weight: normal;
+}
+
+/* Adiciona o parêntese direito após o campo DDD */
+input.ddd-input::after {
+    content: ")";
+    margin-left: 5px;
+    font-weight: normal;
+}
