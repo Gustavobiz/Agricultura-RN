@@ -9,14 +9,28 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     border: 1px;
     padding: 20px;
 }
 
-h1, p {
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 24%; /* Define a largura da imagem (opcional) */
+}
+
+h1{
     text-align: center;
+    text-transform: uppercase;
+    margin-top: 60px;   /* Espaço acima do h1 */
+    margin-bottom: 60px; /* Espaço abaixo do h1 */
+}
+
+h3 {
+    text-align:left;
     text-transform: uppercase;
 }
 
@@ -38,6 +52,8 @@ input {
     border: 0;
     border-bottom: 2px solid rgb(0, 0, 0);
     outline: 0;
+    flex-grow: 1;  
+    min-width: 0;  
 }
 /* .large-input {
     width: 0%;
@@ -60,25 +76,33 @@ button {
 
 input::placeholder {
     color: black; /* Muda a cor do texto placeholder */
-     /* Aplica itálico ao placeholder */
 }
-input.ddd-input{
-    width: 40px;
+
+#ddd{
+    max-width: 30px;
+    width: 1%;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     text-align: center;
     margin-right: 5px;
 }
-/* Adiciona o parêntese esquerdo antes do campo DDD */
-input.ddd-input::before {
-    content: "(";
-    margin-right: 5px;
+.ddd-parentheses {
     font-weight: normal;
+    margin: 0 5px;
 }
 
-/* Adiciona o parêntese direito após o campo DDD */
-input.ddd-input::after {
-    content: ")";
-    margin-left: 5px;
-    font-weight: normal;
+.large-input {
+    width: 60%;
+}
+.medium-larger-input {
+    width: 30%;
+}
+.medium-input {
+    width: 30%;
+}
+.short-input {
+    width: 18%;
+}
+.final-input {
+    width: 100%;
 }
