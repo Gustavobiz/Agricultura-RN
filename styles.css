@@ -110,5 +110,29 @@ input::placeholder {
     width: 70%;
 }
 
+.linha-multipla {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid black; /* Adiciona uma borda na parte inferior */
+    margin-top: 1px;
+    height: auto;
+    line-height: 30px; /* Altura de cada linha */
+    font-size: 16px;
+    resize: none; /* Impede o redimensionamento */
+    background: repeating-linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent 27px,
+        black 28px,
+        black 30px
+    );
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 100% 90px; /* Define o tamanho do gradiente para criar as linhas */
+    padding: 5px;
+    box-sizing: border-box;
+}
 
+v
 
