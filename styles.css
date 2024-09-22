@@ -95,7 +95,7 @@ input::placeholder {
     width: 60%;
 }
 .medium-larger-input {
-    width: 30%;
+    width: 55%;
 }
 .medium-input {
     width: 30%;
@@ -103,6 +103,12 @@ input::placeholder {
 .short-input {
     width: 18%;
 }
-.final-input {
-    width: 100%;
+.min-input {
+    width: 10%;
 }
+.max-input {
+    width: 70%;
+}
+
+
+

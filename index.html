@@ -42,36 +42,40 @@
             <input type="text" id="estado" name="estado" class="short-input">
                               <!--  dados do proprietario -->
             <label for="proprietario">ROPRIETÁRIO/REPRESENTANTE LEGAL(Razão Social)</label>
-            <input type="text" id="proprietario" name="proprietario" class="large-input">
+            <input type="text" id="proprietario" name="proprietario" class="medium-larger-input">
 
             <label for="cnpj/cpf">CNPJ/CPF</label>
             <input type="text" id="cnpj/cpf" name="cnpj/cpf" >
 
             <label for="ie">IE:</label>
-            <input type="text" id="ie" name="ie">
+            <input type="text" id="ie" name="ie" class="short-input">
 
             <label for="situado">SITUADO(RUA/AV)</label>
-            <input type="text" id="situado" name="situado">
+            <input type="text" id="situado" name="situado" class="large-input">
 
             <label for="bairroProprietario">BAIRRO</label>
-            <input type="text" id="bairro-Proprietario" name="bairro">
+            <input type="text" id="bairro-Proprietario" name="bairro" class="short-input">
             
             <label for="municipio">MUNICÍPIO</label>
-            <input type="text" id="municipio-Proprietario" name="municipio">
+            <input type="text" id="municipio-Proprietario" name="municipio" class="min-input">
             
             <label for="estadoProprietario">ESTADO</label>
-            <input type="text" id="estado-Proprietario" name="estado">
+            <input type="text" id="estado-Proprietario" name="estado" class="min-input">
 
             <label for="cepProprietario">CEP</label>
-            <input type="text" id="cep-Proprietario" name="CEP">
+            <input type="text" id="cep-Proprietario" name="CEP" class="short-input">
 
             <label for="referencia">PONTO DE REFERENCIA</label>
-            <input type="text" id="referencia" name="referencia">
+            <input type="text" id="referencia" name="referencia" class="max-input">
 
             <label for="telefone">TELEFONE(</label>
             <input type="text" id="ddd" name="ddd" class="ddd-input" maxlength="2">
             <label for="parentese">)</label>
-            <input type="text" id="telefone" name="telefone" class="underline" maxlength="9">
+            <input type="text" id="telefone" name="telefone" class="min-input" maxlength="9">
+
+            <label for="email">E-MAIL</label>
+            <input type="text" id="email" name="email" >
+
             </form>
             <!-- Continue com o restante dos campos de acordo com a estrutura que precisa -->
             
@@ -89,6 +93,13 @@
                 <!-- Continue com os demais campos de seleção -->
             </div>
             
+            
+            <form>
+                <label for="produto">QUE IRÁ ELABORAR OS PRODUTOS: (PRODUTO E SEU NÚMERO DE REGISTRO NO IDIARN OU SIM):</label>
+                <textarea id="produto" class="linha-multipla" rows="3"></textarea>
+            </form>
+            
+
             <button type="submit">Enviar</button>
         
     </div>
